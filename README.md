@@ -2,13 +2,13 @@
 CSCI 2270 Final Project -- Virtual Checkers
 Team Members - Mark Mietus (solo)
 
-Project Summary:
+######Project Summary:######
 Virtual checkers is a terminal based video game which is enabled to allow 2 players to go head to head. The program uses a 2-D array to store the status and color of a particular player piece. Functionality includes, but is not limited to: Jump moves, movement restrictions (i.e. pawns can only move forward while kings can move forward and backward), refreshed display after each move, prompts for piece selection and movement. All of the mentioned functionalities manipulate the 2-D array structure with a set of class functions that perform specific operations when called.
 
-How to Run 
+######How to Run######
 Unzip the Virtual Checkers into a folder and add the main.cpp, tracker.cpp, and tracker.h in a project program such as codeblocks, or run the main.cpp using a terminal session and make sure that tracker.cpp and tracker.h are in the same directory so they will be included in the program startup.
 
-Dependencies
+######Dependencies######
 Standard C++ libraries required:
 <iostream>
 <sstream>
@@ -16,16 +16,16 @@ Standard C++ libraries required:
 <string.h>
 <stdlib>
 
-System	Requirements
-Terminal viewer
-Unbuntu, Windows, Linux, Mac supported
+######System Requirements######
+- Terminal viewer
+- Ubuntu, Windows, Linux, Mac supported
 
-Contributors
-Madhumitha Soundararajan 
-Rhonda Hoenigman
+######Contributors######
+- Madhumitha Soundararajan 
+- Rhonda Hoenigman
 
 
-Open issues/bugs
+######Open issues/bugs######
 Enhancements: Mutilple jumps in one turn
               Memory of prior moves executed
               User vs PC functionality
