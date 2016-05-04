@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <string.h>
+#include <string>
 #include <stdlib.h>
 
 using namespace std;
@@ -140,20 +140,22 @@ void tracker::kingme(){
 }
 void tracker::selectpiece(){
     cout<<"Select a piece to move."<<endl;
+    
+    cout<<"=====\n"<<endl;
     cout<<"Row:";
     cin>>selectrow;
-    while(selectrow > 7 | selectrow < 0){
-        cout<<"Please Select a Row number from 0-7"<<endl;
+    cout<<"Col:";
+    cin>>selectcol;
+    while(selectrow > 7 | selectrow < 0 | selectcol > 7 | selectcol < 0){
+        cout<<"\nPlease ensure inputs are from 0-7"<<endl;
+        cout<<"\n====="<<endl;
         cout<<"Row:";
         cin>>selectrow;
-    }
-    cout<<"Column:";
-    cin>>selectcol;
-    while(selectcol > 7 | selectcol < 0){
-        cout<<"Please Select a Column number from 0-7"<<endl;
-        cout<<"Column:";
+        cout<<"Col";
         cin>>selectcol;
     }
+    cout<<"\n======"<<endl;
+
 
     cout<<"Selected piece: "<<selectrow<<","<<selectcol<<" ("<<board[selectrow][selectcol]<<")"<<endl;
     if((board[selectrow][selectcol] == " ")){
@@ -175,20 +177,21 @@ void tracker::selectpiece(){
 }
 void tracker::inputmove(){
     cout<<"Select a space to move to."<<endl;
+
+    cout<<"=====\n"<<endl;
     cout<<"Row:";
     cin>>moverow;
-    while(moverow > 7 | moverow < 0){
-        cout<<"Please Select a Row number from 0-7"<<endl;
-        cout<<"Row:";
-        cin>>moverow;
-    }
     cout<<"Column:";
     cin>>movecol;
-    while(movecol > 7 | movecol < 0){
-        cout<<"Please Select a Column number from 0-7"<<endl;
+    while(moverow > 7 | moverow < 0 | movecol > 7 | movecol < 0){
+        cout<<"\nPlease ensure inputs are from 0-7"<<endl;
+        cout<<"\n====="<<endl;
+        cout<<"Row:";
+        cin>>moverow;
         cout<<"Column:";
         cin>>movecol;
     }
+    cout<<"\n======"<<endl;
 }
 
 void tracker::help(){
